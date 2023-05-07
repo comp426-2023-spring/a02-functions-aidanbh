@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Get weather from command line.",
   "main": "cli.js",
+  "type": "module",
   "scripts": {
     "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
   },
