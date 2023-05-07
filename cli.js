@@ -33,7 +33,7 @@ if (args.n) {
 } else if (args.s) {
   lat = -(args.s)
 } else {
-  console.log('Latitude (-n|-s) argument is required.')
+  console.log('Latitude must be in range.')
 }
 
 if (args.e) {
@@ -41,7 +41,7 @@ if (args.e) {
 } else if (args.w) {
   lon = -(args.w)
 } else {
-  console.log('Longitude (-e|-w) argument is required.')
+  console.log('Longitude must be in range.')
 }
 
 if (args.z) timezone = args.z
