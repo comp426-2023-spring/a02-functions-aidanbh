@@ -25,7 +25,7 @@ if (args.h || args.help) {
 
 // get system timezone 
 const timezone = moment.tz.guess()
-const lat, lon
+var lat, lon
 
 // get arguments
 if (args.n) {
