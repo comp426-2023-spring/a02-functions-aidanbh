@@ -1,6 +1,13 @@
 #! /usr/bin/env node
 
-const args = require('minimist')(process.argv.slice(2))
+// "type": "module" requires import instead of require
+
+import moment from "moment-timezone"
+import minimist from "minimist"
+import fetch from "node-fetch"
+
+// parse arguments
+const args = minimist(process.argv.slice(2))
 
 // check for help flag
 
