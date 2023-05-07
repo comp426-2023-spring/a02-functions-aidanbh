@@ -1,0 +1,27 @@
+{
+  "name": "galosh.js",
+  "version": "0.0.1",
+  "description": "Get weather from command line.",
+  "main": "cli.js",
+  "scripts": {
+    "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a02-functions-aidanbh.git"
+  },
+  "keywords": [
+    "'weather'"
+  ],
+  "author": "@aidanbh",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a02-functions-aidanbh/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a02-functions-aidanbh#readme",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "moment-timezone": "^0.5.43",
+    "node-fetch": "^3.3.1"
+  }
+}
