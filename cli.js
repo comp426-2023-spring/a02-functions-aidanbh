@@ -46,6 +46,8 @@ if (args.e) {
 
 if (args.z) timezone = args.z
 
+days = args.d ? args.d : 1 
+
 // make request to API
 const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=weathercode,temperature_2m_max,sunrise,precipitation_sum,precipitation_hours&timezone=${timezone}`)
 
