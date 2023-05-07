@@ -54,7 +54,7 @@ const data = await response.json()
 // just print output if requested
 if (args.j) {
   // pretty print JSON (per SO 5670752)
-  console.log(JSON.stringify(data, null, " ")
+  console.log(JSON.stringify(data, null, " "))
   process.exit(0)
 }
 
