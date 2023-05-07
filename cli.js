@@ -46,7 +46,9 @@ if (args.e) {
 
 if (args.z) timezone = args.z
 
-var days = args.d ? args.d : 1 
+
+// because 0 is a false value, if (args.d) does not work
+var days = (args.d===undefined) ? 1 : args.d
 
 // make request to API
 const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=weathercode,temperature_2m_max,sunrise,precipitation_sum,precipitation_hours&timezone=${timezone}`)
