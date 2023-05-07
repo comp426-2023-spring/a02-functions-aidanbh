@@ -61,16 +61,17 @@ if (args.j) {
 }
 
 // otherwise, report rain boolean for chosen day
-
-console.log(`You ${data.daily.precipitation_hours[days] > 0 ? 'might' : 'will not'} need your galoshes `)
+var daystr
 
 switch (days) {
   case 0:
-    console.log('today')
+    daystr = 'today'
     break;
   case 1:
-    console.log('tomorrow')
+    daystr = 'tomorrow'
     break;  
   default:
-    console.log(`in ${days} days.`)
+    daystr = `in ${days} days`
 }
+
+console.log(`You ${data.daily.precipitation_hours[days] > 0 ? 'might' : 'will not'} need your galoshes ${daystr}.`)
